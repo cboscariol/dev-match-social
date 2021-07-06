@@ -2,13 +2,18 @@ import React from 'react'
 import './style.css'
 import '../../styles/form.css'
 import { Link } from 'react-router-dom'
+import AllRightReserved from '../../components/AllRightReserved'
+import InputPassword from '../../components/InputPassword'
+import { useState } from 'react'
 
 function SignIn() {
+	const [password, setPassword] = useState('')
+
 	return (
 		<div className='container-form'>
-			<form className='form-sign-in'>
+			<form className='form form-sign-in'>
 				<div className='text-center mb-lg'>
-					<h1>ENTRAR</h1>
+					<h1>Login</h1>
 					<Link to='/sign-up'>CADASTRE-SE</Link>
 				</div>
 				<div>
@@ -16,18 +21,15 @@ function SignIn() {
 						<label htmlFor='email'>E-mail</label>
 						<input id="email " type="text" placeholder='Digite seu e-mail' />
 					</div>
-					<div className='flex-column'>
-						<label htmlFor='senha'>Senha</label>
-						<input id="senha " type="password" placeholder='Digite sua senha' />
-					</div>
+					<InputPassword label="Senha" placeholder="Digite sua senha" value={password} setValue={setPassword} />
 					<button className='btn-dark-blue'>Entrar</button>
-					<div>
+					<div className='flex-row itens-center'>
 						<input type="checkbox" value="Lembrar-me" name="remember" id="" />
 						<span htmlFor='remember'>Lembrar-me</span>
 					</div>
 				</div>
 				<Link to="recovery-password" className='my-lg'>Esqueceu sua senha?</Link>
-				<span className='light-label'>©2021 Todos os Direitos Reservados</span>
+				<AllRightReserved />
 
 
 
