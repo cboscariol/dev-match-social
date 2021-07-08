@@ -51,7 +51,7 @@ function SignUp() {
 
 
   return (
-    <div className='container-form'>
+    <div className='background-dark-form container-form'>
       <form className='form form-sign-up'>
         <div className='text-center mb-lg'>
           <h1>Cadastre-se</h1>
@@ -104,7 +104,6 @@ function SignUp() {
 
         <button className='btn-dark-blue'>Cadastre-se</button>
         <AllRightReserved />
-
 
 
 
