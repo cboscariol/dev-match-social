@@ -1,10 +1,26 @@
-.badge-blue{
+.badge {
     display: flex;
     align-items: center;
-    color: white;
-    background-color:  #505DD1;
     border-radius: 8px;
     height: 40px;
     padding: 0 10px;
     margin: 5px;
+}
+
+
+.blue{
+    color: white;
+    background-color:  #505DD1;
+    
+}
+
+.blue-outline{
+    color: #505DD1;
+    background-color:  white;
+    border: 1px solid #505DD1;
+}
+
+.blue-outline:hover{
+    background-color: #505DD1;
+    color: white;
 }

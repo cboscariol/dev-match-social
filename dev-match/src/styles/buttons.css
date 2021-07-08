@@ -2,4 +2,6 @@
     color: white;
     width: 325px;
     background-color: #1B1A34;
+    font-family: inherit;
+    border: 0;
 }

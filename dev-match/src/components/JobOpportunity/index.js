@@ -1,4 +1,5 @@
 import './style.css'
+import Skills from '../Skills/'
 
 function JobOpportunity({
 	img_url,
@@ -20,11 +21,7 @@ function JobOpportunity({
 
 			<div className='details'>
 				<strong>Requisitos</strong>
-				<div className='flex-row'>
-					{requirements.map(requirement => (
-						<div className='badge-blue' key={requirement}>{requirements}</div>
-					))}
-				</div>
+				<Skills skills={requirements} addButton={false} />
 			</div>
 
 			<div className='details'>
